@@ -1,6 +1,6 @@
 # Baboon Learning
 
-## Objective
+## Overview
 
 Despite a recent dramatic rise in the deployment of animal-borne movement sensors, very few studies have attempted to use movement data to classify fine-scale behavioral activity of animals. The purpose of this project is to explore classifying behavioral activity of baboons with deep neural networks. 
 
