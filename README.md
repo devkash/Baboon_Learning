@@ -8,6 +8,6 @@ To find the optimal deep neural network for classification of behavioral activit
 
 The performances of these models are shown below.
 
-## Models Developed
+## Results
 
 
