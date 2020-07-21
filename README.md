@@ -38,7 +38,7 @@ Since pretraining did not positively affect the performances of the models, only
 The x-axis represents the predicted label and the y-axis represents the true label.
 
 ### Multilayer Perceptron
-![](figures/confusion_matrix/mlp.png)
+![](figures/confusion_matrix/mlp.png = 500x500)
 
 ### Time-Aggregrated Multilayer Perceptron
 ![](figures/confusion_matrix/ta-mlp.png)
