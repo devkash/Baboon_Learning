@@ -25,7 +25,7 @@ Latitude, Longitude, Speed, Heading, X-acceleration, Y- acceleration, and Z-acce
 
 The CNN outperformed all other models on the test set with an F1 score of 0.75. Given that accelerometer data can contain a significant amount of noise, it is possible that the convolutional layers were critically important to reduce the impact of noise in the data to allow for accurate classification on the data set; this reduction in noise may explain the CNN’s performance over the the network with an LSTM layer. This, however, does not explain why the CNN-LSTM (or b-CNN-LSTM), which should combine the feature extraction and noise reduction associated with a CNN with an LSTM’s capability to learn sequential dependencies, does not reach the highest performance. Three explanations could explain why the CNN outperformed the CNN-LSTM. First, the CNN-LSTM only applied a convolution over a window- size of four with a filter size of two. This convolution may have been too local to extract the higher-level features that the CNN was apparently able to capture. Secondly, the CNN- LSTM had two convolutional layers while the CNN had four convolution layers. These extra two convolutional layers would have allowed the CNN to extract more global information from each time-window. Lastly, the CNN-LSTM, with over 100,000 trainable parameters, likely have simply had too many parameters for our relatively small dataset to train.
 
-### Comparison of All the model
+### Comparison Between models
 
 ![](figures/nopretrain_vs_pretrain)
 
@@ -39,9 +39,22 @@ Since pretraining did not positively affect the performances of the models, only
 The x-axis represents the predicted label and the y-axis represents the true label.
 
 ![](figures/confusion_matrix/mlp.png)
+Multilayer Perceptron
+
 ![](figures/confusion_matrix/ta-mlp.png)
+Time-Aggregrated Multilayer Perceptron
+
 ![](figures/confusion_matrix/cnn.png)
+Convolutional Neural Network
+
 ![](figures/confusion_matrix/lstm.png)
+Long Short-Term Memory
+
 ![](figures/confusion_matrix/cnn-lstm.png)
+Convolutional Long Short-Term Memory
+
 ![](figures/confusion_matrix/b-lstm.png)
+bidirectional Long Short-Term Memory
+
 ![](figures/confusion_matrix/b-cnn-lstm.png)
+bidirectional Convolutional Long Short-Term Memory
