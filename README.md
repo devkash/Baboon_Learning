@@ -37,23 +37,23 @@ Since pretraining did not positively affect the performances of the models, only
 
 The x-axis represents the predicted label and the y-axis represents the true label.
 
+### Multilayer Perceptron
 ![](figures/confusion_matrix/mlp.png)
-Multilayer Perceptron
 
+### Time-Aggregrated Multilayer Perceptron
 ![](figures/confusion_matrix/ta-mlp.png)
-Time-Aggregrated Multilayer Perceptron
 
+### Convolutional Neural Network
 ![](figures/confusion_matrix/cnn.png)
-Convolutional Neural Network
 
+### Long Short-Term Memory
 ![](figures/confusion_matrix/lstm.png)
-Long Short-Term Memory
 
+### Convolutional Long Short-Term Memory
 ![](figures/confusion_matrix/cnn-lstm.png)
-Convolutional Long Short-Term Memory
 
+### bidirectional Long Short-Term Memory
 ![](figures/confusion_matrix/b-lstm.png)
-bidirectional Long Short-Term Memory
 
+### bidirectional Convolutional Long Short-Term Memory
 ![](figures/confusion_matrix/b-cnn-lstm.png)
-bidirectional Convolutional Long Short-Term Memory
